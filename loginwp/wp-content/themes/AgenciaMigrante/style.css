@@ -1,0 +1,49 @@
+/*
+ Theme Name:     Agencia Migrante
+ Theme URI:      http://www.elegantthemes.com/demo/?theme=Divi
+ Description:    This is Child Theme for Agencia Migrante
+ Author:         Ecolohosting
+ Author URI:     http://ecolohosting.com/
+ Template:       Divi
+ Version:        3.0
+*/
+ 
+/* Add Custom CSS after this line */
+
+/* BACKWARDS EMAIL */
+.e-mail:before { content: attr(data-website) "\0040" attr(data-user); unicode-bidi: bidi-override; direction: rtl; }
+
+/* SAME HEIGHT COLUMNS, VERTICAL ALIGN MIDDLE  */
+.ds-vertical-align { display: flex; flex-direction: column; justify-content: center; } 
+
+/* OWL CAROUSEL */
+.owl-carousel .et_pb_gallery_item{ width:100%!important;margin:0!important; }
+.owl-stage{display:flex;}
+.owl-stage-outer { overflow: hidden; }
+.owl-nav button { position:absolute;top:50%;transform:translateY(-50%);background-color:transparent;border:none; }
+.owl-nav button:before { font-family:FontAwesome;font-size:67px;color:#878787; }
+.owl-nav button span { display: none; }
+.owl-nav .owl-next { right: 0; }
+.owl-nav .owl-next:before{ content:"\f105"; }
+.owl-nav .owl-prev:before{ content:"\f104"; }
+
+.et_pb_gallery_pagination { display: none; }
+.flex-control-nav { position: relative; }
+
+/* Aviso de Privacidad */
+.privacy-item-list{list-style-type: upper-alpha !important; padding-top: 20px !important}
+.privacy_module .use-text-item{margin-bottom: 25px !important}
+.privacy_module .use-text-item::marker{font-weight: 700 !important;}
+
+:root{
+    --primary-color:#E40204;
+    --secon-color:#60096F;
+    --ter-color: #FC8B02;
+
+}
+
+
+
+@media (max-width:767px) {
+    
+}
