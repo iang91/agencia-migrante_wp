@@ -43,6 +43,17 @@
 }
 
 
+.main_slider .et_pb_slide_title .light-font {
+    color: var(--ter-color);
+    font-weight: 500;
+    /* font-weight: normal; */
+    text-transform: uppercase;
+    font-size: 0.38em;
+}
+
+.main_slider .et_pb_slide_title{ line-height: 1em;}
+
+
 @media (max-width:767px) {
     
 }
