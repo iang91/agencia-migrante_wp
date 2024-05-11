@@ -8,7 +8,9 @@ jQuery(function ($) {
 
         
         firstWord('.firstWord .et_pb_slide_title')
+        firstWord('.firstWord .et_pb_module_header')
 
+        
         function firstWord(el) {
         
         
@@ -47,6 +49,30 @@ jQuery(function ($) {
         
         }
     
+        function getHeight(el, hg){
     
+          let container = document.querySelector(el)
+          try {
+      
+              myIt = container
+              document.body.style.setProperty(hg,  myIt.offsetHeight )
+              //console.log(myIt.offsetHeight)
+      
+          } catch(e){
+              e
+          }
+      
+      
+      }
+      
+            getHeight('.row_blur_w ','--height-menu')
+
+      
+      window.addEventListener('resize', function () { 
+      
+        getHeight('.row_blur_w ','--height-menu')
+      
+      
+      })
 
 });
