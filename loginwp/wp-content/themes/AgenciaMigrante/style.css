@@ -42,7 +42,7 @@
 
 }
 
-
+.et_pb_promo_description{ padding-bottom: 0;}
 .main_slider .et_pb_slide_title .light-font {
     color: var(--ter-color);
     font-weight: 500;
@@ -125,10 +125,102 @@
 .et_pb_module_header .light-font {
     color: var(--ter-color);
     font-size: .73em;
-    /* font-weight: 500; */
-    padding-bottom: 1.1em;
+     font-weight: 500; text-transform: uppercase;
+    padding-bottom: 1em;
+}
+.main_slider .et_pb_slide_description {
+    padding-top: 6% !important;
+    padding-bottom: 7.4% !important;
+}
+.bg_crop {
+    background-size: 0;
+}
+.bg_crop:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 47%;
+    left: 0;
+    top: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-@media (max-width:767px) {
+.border-top .et_pb_text_inner:before {
+    content: "";
+    border-bottom: solid;
+    display: block;
+    color: var(--secon-color);
+    width: 7em;
+    border-width: 3px;
+    margin-bottom: 2.6em;
+}
+.title_border_b .et_pb_module_header:after {
+    content: "";
+    border-bottom: solid;
+    width: 3.5em;
+    border-color: var(--secon-color);
+    border-width: 3px;
+    margin-top: 1em;    display: block;
+    margin-bottom: 1em;
+}
+.et_pb_text_align_center .et_pb_module_header:after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#page-container .cta_serv_el {
+    background-size: 0;
+    padding: 0 !important;
+    display: block;
+    padding-bottom: 2.5em !important;
+}
+.cta_serv_el::before {
+    content: "";
+    background-image: inherit;
+    aspect-ratio: 1.4;
+    display: block;
+    background-size: cover;
+}
+.cta_serv_el .et_pb_promo_description {
+    width: 90%;
+    margin: auto;
+}
+
+.cta_serv_el .et_pb_promo_description .et_pb_module_header {
+    padding-bottom: 0;
+    margin-top: 0.9em;
+}
+
+.btn_primary_col{
+    --btn-bg-c:var(--ter-color);
+    background-color: var(--btn-bg-c) !important;
+    border-color: var(--btn-bg-c);color: white;
+}
+.btn_primary_col:hover {
+
+    --btn-bg-c: var(--primary-color);
+}
+
+
+@media (max-width:980px) {
+    .bg_crop:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-image: inherit;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: .3;
+        mix-blend-mode: luminosity;
+    }
+    
     
 }
